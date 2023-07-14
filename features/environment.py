@@ -57,7 +57,7 @@ def browser_init(context, test_name):
 
 def before_scenario(context, scenario):
     # print(f'Started scenario: ', {scenario.name})
-    logger.info(f'Started scenario: ', {scenario.name})
+    logger.info(f'Started scenario: {scenario.name}')
     browser_init(context, scenario.name)
 
 
@@ -68,7 +68,7 @@ def before_step(context, step):
 
 def after_step(context, step):
     if step.status == 'failed':
-        print('\nStep failed: ', step)
+        # print('\nStep failed: ', step)
         logger.error(f'Step failed: {step}')
         # Mark test case as FAILED on BrowserStack:
         # Documentation: https://www.browserstack.com/docs/automate/selenium/view-test-results/mark-tests-as-pass-fail
