@@ -7,6 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class MainPage(Page):
+    POPUP_BTN = (By.CSS_SELECTOR, ".popup-close")
 
     def open_main_page(self):
         self.open_url("https://shop.cureskin.com/")
+        self.wait_for_element_appear(*self.POPUP_BTN).click()
