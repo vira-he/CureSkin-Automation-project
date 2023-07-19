@@ -2,18 +2,18 @@ from pages.base_page import Page
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import Select
+from time import sleep
 
 
 class Header(Page):
     SHOP_BY_PROD_BTN = (By.XPATH, "//span[@class='label'][normalize-space()='Shop by Product']")
     SUNSCREENS_BTN = (By.XPATH, "//span[@class='label'][normalize-space()='Sunscreens']")
 
-    # def search_amazon(self, search_word):
-    #     self.input_text(search_word, *self.SEARCH_FIELD)
-    #     self.click(*self.SUBMIT_BTN)
-
     def click_shop_by_prod(self):
-        self.click(*self.SHOP_BY_PROD_BTN)
+        # self.click(*self.SHOP_BY_PROD_BTN)
+        sleep(1)
+        # had to add Sleep because otherwise the button over obscured by pop-up
+        self.wait_for_element_click(*self.SHOP_BY_PROD_BTN)
 
     def click_sunscreen(self):
         self.click(*self.SUNSCREENS_BTN)

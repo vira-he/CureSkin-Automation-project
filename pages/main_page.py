@@ -11,4 +11,6 @@ class MainPage(Page):
 
     def open_main_page(self):
         self.open_url("https://shop.cureskin.com/")
-        self.wait_for_element_appear(*self.POPUP_BTN).click()
+        # self.wait_for_element_appear(*self.POPUP_BTN).click()
+        self.wait_for_element_click(*self.POPUP_BTN)
+

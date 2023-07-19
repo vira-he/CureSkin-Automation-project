@@ -1,6 +1,7 @@
 import allure
 from allure_commons.types import AttachmentType
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -13,23 +14,27 @@ def browser_init(context, test_name):
     """
     :param context: Behave context
     """
-    driver_path = ChromeDriverManager().install()
-    service = Service(driver_path)
-    context.driver = webdriver.Chrome(service=service)
+    # driver_path = ChromeDriverManager().install()
+    # service = Service(driver_path)
+    # context.driver = webdriver.Chrome(service=service)
+
+    context.driver = webdriver.Firefox()
 
 
     #### HEADLESS MODE ####
+
+    # chrome_options = Options()
     # driver_path = ChromeDriverManager().install()
     # service = Service(driver_path)
-    # options = webdriver.ChromeOptions()
-    # options.add_argument('--headless')
+    # chrome_options.add_argument('--headless')
     # context.driver = webdriver.Chrome(
-    #     chrome_options=options,
+    #     options=chrome_options,
     #     service=service
     # )
 
 
     #### BROWSERSTACK ####
+
     # desired_cap = {
     #     'browser': 'Chrome',
     #     'os_version': '11',
@@ -40,9 +45,6 @@ def browser_init(context, test_name):
     # bs_key = 'H886nJkaPzvgr9Nkneup'
     # url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
     # context.driver = webdriver.Remote(url, desired_capabilities=desired_cap)
-
-
-    # context.driver = webdriver.Firefox(executable_path="/Users/vera/Desktop/QAA/careerist/python-selenium-automation/geckodriver")
 
     context.driver.maximize_window()
 
