@@ -14,9 +14,9 @@ def browser_init(context, test_name):
     """
     :param context: Behave context
     """
-    driver_path = ChromeDriverManager().install()
-    service = Service(driver_path)
-    context.driver = webdriver.Chrome(service=service)
+    # driver_path = ChromeDriverManager().install()
+    # service = Service(driver_path)
+    # context.driver = webdriver.Chrome(service=service)
 
     # context.driver = webdriver.Firefox()
     # context.driver = webdriver.Safari()
@@ -24,15 +24,16 @@ def browser_init(context, test_name):
 
     #### HEADLESS MODE ####
 
-    # chrome_options = Options()
-    # driver_path = ChromeDriverManager().install()
-    # service = Service(driver_path)
-    # chrome_options.add_argument('--headless')
-    # context.driver = webdriver.Chrome(
-    #     options=chrome_options,
-    #     service=service
-    # )
-
+    chrome_options = webdriver.ChromeOptions()
+    driver_path = ChromeDriverManager().install()
+    service = Service(driver_path)
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--window-size=1920,1080")
+    context.driver = webdriver.Chrome(
+        options=chrome_options,
+        service=service
+    )
 
     #### BROWSERSTACK ####
 
