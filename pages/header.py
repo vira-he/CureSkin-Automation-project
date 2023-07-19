@@ -11,7 +11,7 @@ class Header(Page):
 
     def click_shop_by_prod(self):
         # self.click(*self.SHOP_BY_PROD_BTN)
-        sleep(1)
+        sleep(3)
         # had to add Sleep because otherwise the button over obscured by pop-up
         self.wait_for_element_click(*self.SHOP_BY_PROD_BTN)
 

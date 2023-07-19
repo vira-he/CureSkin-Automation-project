@@ -14,11 +14,12 @@ def browser_init(context, test_name):
     """
     :param context: Behave context
     """
-    # driver_path = ChromeDriverManager().install()
-    # service = Service(driver_path)
-    # context.driver = webdriver.Chrome(service=service)
+    driver_path = ChromeDriverManager().install()
+    service = Service(driver_path)
+    context.driver = webdriver.Chrome(service=service)
 
-    context.driver = webdriver.Firefox()
+    # context.driver = webdriver.Firefox()
+    # context.driver = webdriver.Safari()
 
 
     #### HEADLESS MODE ####

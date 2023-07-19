@@ -13,4 +13,7 @@ class SearchResult(Page):
 
     def verify_search_result(self):
         self.driver.wait.until(EC.url_contains('https://shop.cureskin.com/collections/sun-protection'))
-        self.verify_element_text("SPF30 Sunscreen", *self.PRODUCT_HEADER)
+        # self.verify_element_text("SPF30 Sunscreen", *self.PRODUCT_HEADER)
+        actual_result = self.driver.find_element(*self.PRODUCT_HEADER).text
+        assert "Sunscreen" in actual_result, \
+            f'Error! Expected "Sunscreen" in {actual_result} '

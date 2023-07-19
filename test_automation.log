@@ -285,3 +285,59 @@
 2023-07-19 10:37:10,719 - support.logger - INFO - Started step: <when "Open the first product in search">
 2023-07-19 10:37:10,741 - support.logger - INFO - Clicking on css selector, .grid__item .card-wrapper
 2023-07-19 10:37:13,407 - support.logger - INFO - Started step: <then "Verify the fist product in Sunscreen">
+2023-07-19 10:40:17,516 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-19 10:40:19,147 - support.logger - INFO - Started step: <given "Open main page">
+2023-07-19 10:40:19,147 - support.logger - INFO - Opening URL: https://shop.cureskin.com/
+2023-07-19 10:40:25,864 - support.logger - INFO - Started step: <when "Click on Shop by product button">
+2023-07-19 10:40:42,112 - support.logger - ERROR - Step failed: <when "Click on Shop by product button">
+2023-07-19 10:41:06,515 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-19 10:41:08,114 - support.logger - INFO - Started step: <given "Open main page">
+2023-07-19 10:41:08,115 - support.logger - INFO - Opening URL: https://shop.cureskin.com/
+2023-07-19 10:41:14,539 - support.logger - INFO - Started step: <when "Click on Shop by product button">
+2023-07-19 10:41:32,768 - support.logger - ERROR - Step failed: <when "Click on Shop by product button">
+2023-07-19 10:42:18,410 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-19 10:42:21,938 - support.logger - INFO - Started step: <given "Open main page">
+2023-07-19 10:42:21,939 - support.logger - INFO - Opening URL: https://shop.cureskin.com/
+2023-07-19 10:42:28,349 - support.logger - INFO - Started step: <when "Click on Shop by product button">
+2023-07-19 10:42:31,483 - support.logger - INFO - Started step: <when "Click Sunscreen">
+2023-07-19 10:42:31,483 - support.logger - INFO - Clicking on xpath, //span[@class='label'][normalize-space()='Sunscreens']
+2023-07-19 10:42:34,138 - support.logger - INFO - Started step: <when "Open the first product in search">
+2023-07-19 10:42:34,337 - support.logger - INFO - Clicking on css selector, .grid__item .card-wrapper
+2023-07-19 10:42:36,483 - support.logger - INFO - Started step: <then "Verify the fist product in Sunscreen">
+2023-07-19 10:51:54,859 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-19 10:51:57,284 - support.logger - INFO - Started step: <given "Open main page">
+2023-07-19 10:51:57,285 - support.logger - INFO - Opening URL: https://shop.cureskin.com/
+2023-07-19 10:52:08,700 - support.logger - INFO - Started step: <when "Click on Shop by product button">
+2023-07-19 10:52:11,828 - support.logger - INFO - Started step: <when "Click Sunscreen">
+2023-07-19 10:52:11,829 - support.logger - INFO - Clicking on xpath, //span[@class='label'][normalize-space()='Sunscreens']
+2023-07-19 10:52:13,025 - support.logger - INFO - Started step: <when "Open the first product in search">
+2023-07-19 10:52:13,712 - support.logger - INFO - Clicking on css selector, .grid__item .card-wrapper
+2023-07-19 10:52:21,230 - support.logger - INFO - Started step: <then "Verify the fist product in Sunscreen">
+2023-07-19 10:52:21,360 - support.logger - ERROR - Step failed: <then "Verify the fist product in Sunscreen">
+2023-07-19 10:57:53,097 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-19 10:57:54,430 - support.logger - INFO - Started step: <given "Open main page">
+2023-07-19 10:57:54,479 - support.logger - INFO - Opening URL: https://shop.cureskin.com/
+2023-07-19 10:58:00,946 - support.logger - INFO - Started step: <when "Click on Shop by product button">
+2023-07-19 10:58:04,135 - support.logger - INFO - Started step: <when "Click Sunscreen">
+2023-07-19 10:58:04,135 - support.logger - INFO - Clicking on xpath, //span[@class='label'][normalize-space()='Sunscreens']
+2023-07-19 10:58:04,496 - support.logger - INFO - Started step: <when "Open the first product in search">
+2023-07-19 10:58:05,038 - support.logger - INFO - Clicking on css selector, .grid__item .card-wrapper
+2023-07-19 10:58:09,390 - support.logger - INFO - Started step: <then "Verify the fist product in Sunscreen">
+2023-07-19 10:58:28,463 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-19 10:58:35,431 - support.logger - INFO - Started step: <given "Open main page">
+2023-07-19 10:58:35,432 - support.logger - INFO - Opening URL: https://shop.cureskin.com/
+2023-07-19 10:58:41,996 - support.logger - INFO - Started step: <when "Click on Shop by product button">
+2023-07-19 10:58:45,308 - support.logger - INFO - Started step: <when "Click Sunscreen">
+2023-07-19 10:58:45,308 - support.logger - INFO - Clicking on xpath, //span[@class='label'][normalize-space()='Sunscreens']
+2023-07-19 10:58:46,469 - support.logger - INFO - Started step: <when "Open the first product in search">
+2023-07-19 10:58:46,588 - support.logger - INFO - Clicking on css selector, .grid__item .card-wrapper
+2023-07-19 10:58:52,060 - support.logger - INFO - Started step: <then "Verify the fist product in Sunscreen">
+2023-07-19 10:59:06,840 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-19 10:59:10,669 - support.logger - INFO - Started step: <given "Open main page">
+2023-07-19 10:59:10,682 - support.logger - INFO - Opening URL: https://shop.cureskin.com/
+2023-07-19 10:59:16,975 - support.logger - INFO - Started step: <when "Click on Shop by product button">
+2023-07-19 10:59:20,454 - support.logger - INFO - Started step: <when "Click Sunscreen">
+2023-07-19 10:59:20,455 - support.logger - INFO - Clicking on xpath, //span[@class='label'][normalize-space()='Sunscreens']
+2023-07-19 10:59:24,361 - support.logger - INFO - Started step: <when "Open the first product in search">
+2023-07-19 10:59:24,658 - support.logger - INFO - Clicking on css selector, .grid__item .card-wrapper
+2023-07-19 10:59:27,450 - support.logger - INFO - Started step: <then "Verify the fist product in Sunscreen">
