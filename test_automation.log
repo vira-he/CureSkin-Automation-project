@@ -360,3 +360,28 @@
 2023-07-19 11:26:16,128 - support.logger - INFO - Started step: <when "Open the first product in search">
 2023-07-19 11:26:16,226 - support.logger - INFO - Clicking on css selector, .grid__item .card-wrapper
 2023-07-19 11:26:22,464 - support.logger - INFO - Started step: <then "Verify the fist product in Sunscreen">
+2023-07-21 17:46:04,239 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:02:54,645 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:07:26,772 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:09:32,606 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:09:59,555 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:14:29,883 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:14:59,908 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:16:47,553 - support.logger - INFO - Started step: <given "Open main page">
+2023-07-21 19:16:47,556 - support.logger - ERROR - Step failed: <given "Open main page">
+2023-07-21 19:17:18,235 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:20:18,751 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:20:48,665 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:21:26,500 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:23:36,422 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:29:58,811 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:30:58,120 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:34:19,924 - support.logger - INFO - Started scenario: User can access Search by Product page
+2023-07-21 19:34:30,965 - support.logger - INFO - Started step: <given "Open main page">
+2023-07-21 19:34:31,000 - support.logger - INFO - Opening URL: https://shop.cureskin.com/
+2023-07-21 19:34:38,458 - support.logger - INFO - Started step: <when "Click on Shop by product button">
+2023-07-21 19:34:42,354 - support.logger - INFO - Started step: <when "Click Sunscreen">
+2023-07-21 19:34:42,354 - support.logger - INFO - Clicking on xpath, //span[@class='label'][normalize-space()='Sunscreens']
+2023-07-21 19:34:43,678 - support.logger - INFO - Started step: <when "Open the first product in search">
+2023-07-21 19:34:44,087 - support.logger - INFO - Clicking on css selector, .grid__item .card-wrapper
+2023-07-21 19:34:46,066 - support.logger - INFO - Started step: <then "Verify the fist product in Sunscreen">
