@@ -8,15 +8,20 @@ from time import sleep
 class Header(Page):
     SHOP_BY_PROD_BTN = (By.XPATH, "//span[@class='label'][normalize-space()='Shop by Product']")
     SUNSCREENS_BTN = (By.XPATH, "//span[@class='label'][normalize-space()='Sunscreens']")
+    SHOP_BY_PROD_MOB = (By.CSS_SELECTOR, ".menu-drawer__menu-item.list-menu__item.animate-arrow.focus-inset")
+    SUNSCREENS_MOB = (By.XPATH, "//a[@href='/collections/sun-protection']")
 
     def click_shop_by_prod(self):
         # self.click(*self.SHOP_BY_PROD_BTN)
         sleep(3)
-        # had to add Sleep because otherwise the button over obscured by pop-up
-        self.wait_for_element_click(*self.SHOP_BY_PROD_BTN)
+        # self.wait_for_element_click(*self.SHOP_BY_PROD_BTN)
+        ham_all_elements = self.find_elements(*self.SHOP_BY_PROD_MOB)
+        ham_all_elements[1].click()
 
     def click_sunscreen(self):
-        self.click(*self.SUNSCREENS_BTN)
+        # self.click(*self.SUNSCREENS_BTN)
+        all_elements = self.find_elements(*self.SUNSCREENS_MOB)
+        all_elements[0].click()
     #
     # def click_signin_popup(self):
     #     self.click(*self.POPUP_SIGNIN_BTN)

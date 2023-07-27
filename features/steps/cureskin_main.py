@@ -9,6 +9,11 @@ def open_main_page(context):
     context.app.main_page.open_main_page()
 
 
+@when("Open Hamburger Menu")
+def open_ham_menu(context):
+    context.app.main_page.open_ham_menu()
+
+
 @when("Click on Shop by product button")
 def click_shop_by_prod(context):
     context.app.header.click_shop_by_prod()

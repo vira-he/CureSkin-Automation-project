@@ -34,26 +34,32 @@ def browser_init(context, scenario):
     #     service=service
     # )
 
-    # BROWSERSTACK
-    options = webdriver.FirefoxOptions()
-    options.set_preference('profile', "/Users/test/Library/Application Support/Firefox/Profiles/<name_of_your_profile>")
+    # # BROWSERSTACK
+    # options = webdriver.FirefoxOptions()
+    # options.set_preference('profile', "/Users/test/Library/Application Support/Firefox/Profiles/<name_of_your_profile>")
+    #
+    # caps = {
+    #
+    #     "os": "Windows",
+    #     "osVersion": "11",
+    #     "buildName": "firefoxprofile- python",
+    #     "sessionName": "firefoxprofile- python",
+    #     "browserName": "Firefox",
+    # }
+    # options.set_capability('bstack:options', caps)
+    #
+    # context.driver = webdriver.Remote(
+    #     command_executor='http://virahetman_JQceH1:H886nJkaPzvgr9Nkneup@hub.browserstack.com/wd/hub',
+    #     options=options)
+    #
+    # context.driver.execute_script('browserstack_executor:{"action":"setSessionName",\
+    #  "arguments":{"name": " ' + scenario.name + ' " }}')
 
-    caps = {
-
-        "os": "Windows",
-        "osVersion": "11",
-        "buildName": "firefoxprofile- python",
-        "sessionName": "firefoxprofile- python",
-        "browserName": "Firefox",
-    }
-    options.set_capability('bstack:options', caps)
-
-    context.driver = webdriver.Remote(
-        command_executor='http://virahetman_JQceH1:H886nJkaPzvgr9Nkneup@hub.browserstack.com/wd/hub',
-        options=options)
-
-    context.driver.execute_script('browserstack_executor:{"action":"setSessionName",\
-     "arguments":{"name": " ' + scenario.name + ' " }}')
+    # Mobile:
+    mobile_emulation = {"deviceName": "iPhone 12 Pro"}
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_experimental_option("mobileEmulation", mobile_emulation)
+    context.driver = webdriver.Chrome(options=chrome_options)
 
     context.driver.maximize_window()
     context.driver.implicitly_wait(4)
